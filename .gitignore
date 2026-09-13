@@ -1,0 +1,34 @@
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.local
+
+# Dependencies and generated output
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.coverage
+coverage/
+.cache/
+/tmp/
+/images/
+/packages/
+/artifacts/
+/build/
+/dist/
+*.tar
+*.tar.gz
+*.tgz
+*.log
+
+# Editor and operating-system files
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

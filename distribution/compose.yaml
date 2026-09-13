@@ -1,0 +1,41 @@
+# Advanced service composition. The launcher uses saved environments directly.
+name: ${COMPOSE_PROJECT_NAME:?Select an explicit project name}
+services:
+  worker:
+    image: ${INTENTFORGE_IMAGE:?Select a loaded image tag or digest}
+    platform: linux/amd64
+    pull_policy: never
+    container_name: ${INTENTFORGE_CONTAINER:?Select a distinct container name}
+    init: true
+    restart: "no"
+    network_mode: bridge
+    stop_grace_period: 30s
+    environment:
+      FORGE_CONTAINER: ${INTENTFORGE_CONTAINER}
+      INTENTFORGE_ORIGIN: http://127.0.0.1:${INTENTFORGE_PORT:-4800}
+      FORGE_ORIGIN: http://127.0.0.1:${FORGE_PORT:-4310}
+      INTENT_ORIGIN: http://127.0.0.1:${INTENT_PORT:-8787}
+      ATLAS_ORIGIN: http://127.0.0.1:${ATLAS_PORT:-4721}
+      ATLAS_PREVIEW_ORIGIN: http://127.0.0.1:${ATLAS_PREVIEW_PORT:-4722}
+      ATLAS_PATH: ${ATLAS_PATH:-atlas}
+    ports:
+      - "127.0.0.1:${INTENTFORGE_PORT:-4800}:4800"
+      - "127.0.0.1:${FORGE_PORT:-4310}:4310"
+      - "127.0.0.1:${INTENT_PORT:-8787}:8787"
+      - "127.0.0.1:${ATLAS_PORT:-4721}:4721"
+      - "127.0.0.1:${ATLAS_PREVIEW_PORT:-4722}:4722"
+    volumes:
+      - type: bind
+        source: ${INTENTFORGE_WORKSPACE:?Select an existing absolute workspace}
+        target: /workspace
+        bind:
+          create_host_path: false
+      - state:/state
+      - exports:/exports
+    tmpfs:
+      - /cache
+volumes:
+  state:
+    name: ${INTENTFORGE_STATE_VOLUME:?Select a persistent state volume}
+  exports:
+    name: ${INTENTFORGE_EXPORTS_VOLUME:?Select a persistent export volume}

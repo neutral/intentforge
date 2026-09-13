@@ -1,0 +1,12 @@
+*
+!container/
+!container/**
+!payloads/
+!payloads/**
+!image-inputs.json
+!build-source.json
+!LICENSE
+!LICENSE.CC0-1.0
+!LICENSE.0BSD
+!THIRD_PARTY.md
+!Dockerfile

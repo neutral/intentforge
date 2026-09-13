@@ -1,0 +1,46 @@
+{
+  "schema": "intentforge.image-inputs.v1",
+  "version": "0.1.0",
+  "platform": "linux/amd64",
+  "baseImage": "node:24.18.0-bookworm-slim@sha256:d45d78e7929b46875bbd4e29bea672d5bc48186c6c3588306521c815e78352d6",
+  "nodeVersion": "24.18.0",
+  "codexVersion": "0.153.4",
+  "debianSnapshot": "20260912T000000Z",
+  "components": [
+    {
+      "file": "atlas-payload-0.9.0-linux-x64.tar.gz",
+      "sha256": "d4da375decf04683213a6977ac301b47886a8a0fa7d451030cd0986d47d0b628",
+      "sourceCommit": "3619c318ea6140fe615abe06e7e8cd8324bd5fd6",
+      "id": "atlas",
+      "version": "0.9.0"
+    },
+    {
+      "file": "intent-0.1.0-application.tar.gz",
+      "sha256": "3a4572ba210b94e6aa96b2848d4a69ae33729a72e7beebbd00094453f987c1e5",
+      "sourceCommit": "e27f9609b890e622ffbd926110d6e5f50e8fc1a7",
+      "id": "intent",
+      "version": "0.1.0"
+    },
+    {
+      "file": "forge-0.1.0-application.tar.gz",
+      "sha256": "591997392bbfe617401edf6da8611e6be67a3b05298006108f9a25d5e6cc4f72",
+      "sourceCommit": "e22d74195681cb3e4510b0d0ae98df39f0d2e4fd",
+      "id": "forge",
+      "version": "0.1.0"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "codex-0.153.4.tgz",
+      "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.153.4.tgz",
+      "sha256": "fd04263c1adfa1d285c6c0ad86a97cab508d3012ee9eab80a99f773cc4b2fb3a",
+      "id": "codex"
+    },
+    {
+      "file": "codex-0.153.4-linux-x64.tgz",
+      "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.153.4-linux-x64.tgz",
+      "sha256": "54818cb9fce3360cc6e44cfc5a96952cd5c1243efb43cbe488e11dda84663e08",
+      "id": "codex-native"
+    }
+  ]
+}
