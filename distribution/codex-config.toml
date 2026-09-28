@@ -1,0 +1,6 @@
+[marketplaces.intentforge]
+source_type = "local"
+source = "/opt/intentforge"
+
+[plugins."trellis@intentforge"]
+enabled = true

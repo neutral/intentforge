@@ -1,0 +1,56 @@
+{
+  "schema": "intentforge.image-inputs.v1",
+  "version": "0.2.5",
+  "platform": "linux/amd64",
+  "baseImage": "node:24.18.0-bookworm-slim@sha256:d45d78e7929b46875bbd4e29bea672d5bc48186c6c3588306521c815e78352d6",
+  "nodeVersion": "24.18.0",
+  "codexVersion": "0.153.4",
+  "debianSnapshot": "20260912T000000Z",
+  "components": [
+    {
+      "file": "neutral-atlas-1.1.0.tgz",
+      "sha256": "377627fd9886b6271dde007cd17a59d889ff7bce52fc5dbb33dc1ffebc6bacf1",
+      "sourceCommit": "7807cfb10fbb3a17ee2893b67628bd7fabe42e20",
+      "id": "atlas",
+      "version": "1.1.0",
+      "manifestIdentity": "39c7bea661f1c93cdf90fc9956415ad1240fc0cac4132f66650ef0f4462de572",
+      "url": "https://registry.npmjs.org/@neutral/atlas/-/atlas-1.1.0.tgz"
+    },
+    {
+      "file": "intent-0.1.0-application.tar.gz",
+      "sha256": "3a4572ba210b94e6aa96b2848d4a69ae33729a72e7beebbd00094453f987c1e5",
+      "sourceCommit": "e27f9609b890e622ffbd926110d6e5f50e8fc1a7",
+      "id": "intent",
+      "version": "0.1.0"
+    },
+    {
+      "file": "forge-0.1.0-application.tar.gz",
+      "sha256": "591997392bbfe617401edf6da8611e6be67a3b05298006108f9a25d5e6cc4f72",
+      "sourceCommit": "e22d74195681cb3e4510b0d0ae98df39f0d2e4fd",
+      "id": "forge",
+      "version": "0.1.0"
+    },
+    {
+      "file": "trellis-0.6.1-86d21fd233d5b4c2db979b704c85ad8a69939a2f.tar.gz",
+      "url": "https://codeload.github.com/neutral/trellis/tar.gz/86d21fd233d5b4c2db979b704c85ad8a69939a2f",
+      "sha256": "e56a3da12e3a79db9187c7c70c14dc76b07b58d2fab5d568b1fd4a70b3e8cf48",
+      "sourceCommit": "86d21fd233d5b4c2db979b704c85ad8a69939a2f",
+      "id": "trellis",
+      "version": "0.6.1"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "codex-0.153.4.tgz",
+      "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.153.4.tgz",
+      "sha256": "fd04263c1adfa1d285c6c0ad86a97cab508d3012ee9eab80a99f773cc4b2fb3a",
+      "id": "codex"
+    },
+    {
+      "file": "codex-0.153.4-linux-x64.tgz",
+      "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.153.4-linux-x64.tgz",
+      "sha256": "54818cb9fce3360cc6e44cfc5a96952cd5c1243efb43cbe488e11dda84663e08",
+      "id": "codex-native"
+    }
+  ]
+}

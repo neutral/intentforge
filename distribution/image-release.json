@@ -1,0 +1,7 @@
+{
+  "schema": "intentforge.image-release.v1",
+  "version": "0.2.5",
+  "platform": "linux/amd64",
+  "reference": "ghcr.io/neutral/intentforge@sha256:7cb4d54efca9589a2ac42c5e02f8d1ccc989b0f52c4b0dac35e09fd298a96b0b",
+  "imageId": "sha256:28a6b2d07a5a835e6e8031f48a619d1230ac7d92266c8bf10de4843c1214988b"
+}

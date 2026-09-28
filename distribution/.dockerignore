@@ -1,0 +1,14 @@
+*
+!container/
+!container/**
+!payloads/
+!payloads/**
+!image-inputs.json
+!build-source.json
+!plugin-marketplace.json
+!codex-config.toml
+!LICENSE
+!LICENSE.CC0-1.0
+!LICENSE.0BSD
+!THIRD_PARTY.md
+!Dockerfile

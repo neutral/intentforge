@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IntentForge</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="welcome">
+      <div>
+        <span class="eyebrow">Persistent development environment</span>
+        <h1>IntentForge<span aria-hidden="true">.</span></h1>
+        <p class="intro">Develop software with shared knowledge, clear definitions, and deliberate agent work.</p>
+        <p class="portfolio">Trellis, Atlas, Intent, and Forge share your project workspace.</p>
+      </div>
+      <div class="workspace">
+        <span class="workspace-label">Project workspace</span>
+        <code>/workspace</code>
+        <p>Project files and saved state remain available when you stop the environment.</p>
+      </div>
+    </header>
+
+    <section class="applications" aria-labelledby="applications-heading">
+      <div class="section-heading">
+        <h2 id="applications-heading">Open an application</h2>
+        <p id="connection" class="connection" role="status" data-status="starting">Checking services…</p>
+      </div>
+      <div class="products">
+        <article class="product">
+          <div class="product-heading"><span class="product-icon" aria-hidden="true">A</span><span class="eyebrow">Project knowledge</span></div>
+          <h3>Atlas</h3>
+          <p>Develop navigable explanations of the project, its decisions, and the sources behind them.</p>
+          <span id="atlas-status" class="status" data-status="starting">Starting service…</span>
+          <a id="atlas-link" class="application-link" aria-disabled="true" target="_blank" rel="noopener noreferrer">Open Atlas <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="product">
+          <div class="product-heading"><span class="product-icon" aria-hidden="true">I</span><span class="eyebrow">Software definitions</span></div>
+          <h3>Intent</h3>
+          <p>Define what the software promises, connect definitions to code, and describe how to check them.</p>
+          <span id="intent-status" class="status" data-status="starting">Starting service…</span>
+          <a id="intent-link" class="application-link" aria-disabled="true" target="_blank" rel="noopener noreferrer">Open Intent <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="product">
+          <div class="product-heading"><span class="product-icon" aria-hidden="true">F</span><span class="eyebrow">Agent development</span></div>
+          <h3>Forge <span class="view-label">Work</span></h3>
+          <p>Give a Worker a Direction, steer its work, and read the progress it saves to the project.</p>
+          <span id="forge-status" class="status" data-status="starting">Starting service…</span>
+          <a id="forge-link" class="application-link" aria-disabled="true" target="_blank" rel="noopener noreferrer">Open Work <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="application-note">Intent and Atlas open separate browser pages. Return here after a service restart for current session links.</p>
+    </section>
+
+    <section id="trellis" class="trellis" aria-labelledby="trellis-heading">
+      <div class="trellis-intro">
+        <span class="eyebrow">Working methods · Codex skills</span>
+        <h2 id="trellis-heading">Trellis</h2>
+        <p>Build practical handbooks and improve how the project gets work done. Trellis is bundled for Codex inside this environment and needs no separate service or account.</p>
+        <p class="trellis-instruction">Ask a Worker in Work to use a skill. Name the area and the result you want.</p>
+      </div>
+      <div class="skills">
+        <article class="skill">
+          <h3>Shape Handbook</h3>
+          <p>Create, adopt, review, or refine an area's practices, Checks, Playbooks, and templates.</p>
+          <div class="request">
+            <span class="request-label">Example request</span>
+            <p id="shape-handbook-request">Use Shape Handbook to create a handbook for /workspace. Explain how contributors should select verification commands and record their limits.</p>
+            <button class="copy-request" type="button" data-copy="shape-handbook-request">Copy request <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="skill-scope">Request creation or adoption explicitly. A review returns findings. Ask for a Playbook when you want a repeatable procedure captured.</p>
+        </article>
+        <article class="skill">
+          <h3>Learn From Work</h3>
+          <p>Examine selected experience and propose improvements to the project's working methods.</p>
+          <div class="request">
+            <span class="request-label">Example request</span>
+            <p id="learn-from-work-request">Use Learn From Work to review this conversation and the project files we changed. Propose useful handbook improvements for me to consider.</p>
+            <button class="copy-request" type="button" data-copy="learn-from-work-request">Copy request <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="skill-scope">This skill returns proposals and writes no files. Choose what to adopt, then ask Shape Handbook to apply it.</p>
+        </article>
+      </div>
+      <p class="trellis-note">Desktop conversations stay outside the container. Supply any notes or files the Worker needs. Trellis runs when requested; opening the environment creates no handbook.</p>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </section>
+
+    <aside class="session-note" aria-labelledby="session-heading">
+      <span class="note-marker" aria-hidden="true">i</span>
+      <div><h2 id="session-heading">Start work deliberately</h2><p>Service readiness, Codex authentication, and Worker activity are separate. Opening this environment starts services. Initialize collections in their editors and give a Worker explicit instructions in Work.</p></div>
+    </aside>
+    <footer><span>IntentForge</span><span>One persistent workspace. You choose the work and the changes to retain.</span></footer>
+  </main>
+</body>
+</html>
